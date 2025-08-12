@@ -30,5 +30,56 @@ El flujo es simple:
 
 ---
 
-## 📦 Instalación
+## ⚙️ Configuración
+1. **Clonar el repositorio**
+```bash
+git clone <URL_REPO>
+cd notifier
+```
 
+2. **Instalar dependencias**
+```bash
+npm install
+```
+
+3. **Configurar variables de entorno**
+Crear un archivo `.env` en la raíz del proyecto con el siguiente contenido:
+
+```
+MAIL_USER=tu_correo@gmail.com
+MAIL_PASS=tu_contraseña_o_app_password
+```
+
+> **Nota:** Si usas Gmail y tienes activada la verificación en dos pasos, deberás generar una **App Password** desde tu cuenta de Google.
+
+4. **Cargar archivo HTML de plantilla**
+El archivo `halloween_alone.html` y `halloween_accompanied.html` deben estar dentro de `src/common/templates` e incluir un marcador `[name]` en caso de halloween_alone y `[name]`, `[accompanied]` en halloween_accompanied, estos serán reemplazado dinámicamente con el nombre de cada participante y/o acompañante.
+
+---
+
+## 📤 Uso
+1. Sube el archivo Excel con los registros exportados desde Google Forms.
+2. El sistema leerá los nombres y correos electrónicos.
+3. Se reemplazará `[Nombre]` en la plantilla con el nombre real del invitado.
+4. Se enviará el correo a cada participante.
+
+---
+
+## 📦 Ejecución
+```bash
+npm run start
+```
+
+---
+
+## 🛠 Tecnologías
+- **NestJS**
+- **Nodemailer**
+- **xlsx**
+- **dotenv**
+- **validator**
+
+---
+
+## 📜 Licencia
+Este proyecto es de uso interno para la organización de eventos y no tiene fines comerciales.

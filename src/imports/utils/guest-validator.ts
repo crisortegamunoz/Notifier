@@ -1,4 +1,4 @@
-import { ValidationHelper } from '../../../common/validators/validator-helper';
+import { ValidationHelper } from '../../common/validators/validator-helper';
 import { Guest } from '../dtos/guest.dto';
 
 export class GuestValidator {
