@@ -33,7 +33,7 @@ El flujo es simple:
 ## ⚙️ Configuración
 1. **Clonar el repositorio**
 ```bash
-git clone <URL_REPO>
+git clone https://github.com/crisortegamunoz/Notifier.git
 cd notifier
 ```
 
@@ -60,7 +60,7 @@ El archivo `halloween_alone.html` y `halloween_accompanied.html` deben estar den
 ## 📤 Uso
 1. Sube el archivo Excel con los registros exportados desde Google Forms.
 2. El sistema leerá los nombres y correos electrónicos.
-3. Se reemplazará `[Nombre]` en la plantilla con el nombre real del invitado.
+3. Se reemplazará `[name]` y/o `[accompanied]` en las plantillas correspondiente.
 4. Se enviará el correo a cada participante.
 
 ---
